@@ -10,10 +10,10 @@ const makeChange = (c) => {
 
 	for(let i in units){
 		let currentUnit = units[i];
-		output[i] = num / currentUnit;
-		num = num - currentUnit * output[i]
-		return output;
+		output[i] = parseInt( c / currentUnit);
+		c = c - currentUnit * output[i]
 	}
+	return output;
 };
 
 // Do not the change the code below
